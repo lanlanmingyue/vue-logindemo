@@ -1,0 +1,37 @@
+$color: orange !default;
+.block {
+  color: $color;
+}
+//hong222
+@mixin border-radius {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	background:green;
+    @include border-radius;
+}
+
+//拓展继承
+.btn {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #f36;
+  color: #fff;
+ @extend .btn;
+}
+//zhanwie
+%mt5 {
+  margin-top: 5px;
+}
+/* zzz */
+
+.btn2{
+  @extend %mt5;
+}

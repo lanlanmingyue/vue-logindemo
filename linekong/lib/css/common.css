@@ -1,0 +1,139 @@
+html{-webkit-text-size-adjust: 100%; font-size: 100px;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input,button, textarea, p, blockquote, th, td, hr,a,em{margin: 0; padding: 0; -webkit-box-sizing: border-box;}
+body{font-family:"microsoft yahei"!important;  line-height: 1.5; overflow-x: hidden; -webkit-overflow-scrolling: touch;}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary{display: block;}
+
+a{background: transparent; text-decoration: none; -webkit-tap-highlight-color: transparent;}
+a:link{text-decoration:none ; } 
+a:visited { text-decoration:none ;} 
+a:hover { text-decoration:underline ;} 
+a:active {text-decoration:none ;outline: 0; } 
+a:focus {
+    outline: none;
+}
+img{border: 0;}
+h2,h3{font-weight: normal;}
+input{line-height: normal;outline: 0 none;-webkit-tap-highlight-color: transparent;font-family: "SimHei";}
+label{-webkit-tap-highlight-color: transparent;}
+input[type="button"],input[type="submit"],input[type="text"]{-webkit-appearance:none;}
+textarea{overflow: auto; resize: vertical;-webkit-appearance:none;}
+body{min-width: 320px;}
+ul,li{list-style: none;}
+
+.clb{clear:both;}
+.rel{position:relative;}
+.over-hidden{overflow:hidden;}
+.wrap{width:100%;}
+.mar-auto{margin:0 auto;}
+.abs{position:absolute;}
+
+.left{float:left;}
+.right{float:right;}
+.inline-b{display:inline-block;}
+.block-a{display: block;}
+input,textarea{
+    outline:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    blr:expression(this.onFocus=this.blur());
+    -moz-tap-highlight-color:rgba(0, 0, 0, 0);
+    -o-tap-highlight-color:rgba(0, 0, 0, 0);
+    -ms-tap-highlight-color:rgba(0, 0, 0, 0);
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+textarea{resize:none;}
+.mc1-input-width{width:100%;}
+select,input{-webkit-appearance:none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);   }
+
+/**
+ * 閲嶆瀯 u, b, i, 鏍囩锛�
+*/
+u {
+    text-decoration: none;
+}
+
+b {
+    font-weight: normal;
+}
+
+i ,var{
+    font-style: normal;
+}
+/*
+ * 娓呴櫎娴姩绫� (hasLayout + Block Formatting Context)锛�
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { *zoom:1; }
+// .clearfix, .fix-clean {
+//     *zoom: 1;
+// }
+// .clearfix:before, .fix-clean:before,
+// .clearfix:after , .fix-clean:after {
+//     content: " ";
+//     display: table;
+// }
+// .clearfix:after, .fix-clean:after {
+//     clear: both;
+// }
+
+.width320{
+    width: 100%;
+}
+.width300{
+    width: 93.75%;
+}
+.width310{
+    width: 96.875%;
+}
+.width290{
+    width: 90.625%;
+}
+.banner-img{width: 100%;height: auto;display: block;}
+
+#back-to-top{
+    position:fixed;
+    bottom:5%;
+    left:90%;
+}
+#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:#d1d1d1;
+    display:block;
+    width:50px;
+    -moz-transition:color 1s;
+    -webkit-transition:color 1s;
+    -o-transition:color 1s;
+}
+#back-to-top a:hover{
+    color:#979797;
+}
+#back-to-top a span{
+    width: 50px;
+    height: 50px;
+    display:block;
+    background:url(./../../images/top.png) no-repeat center center;
+    margin-bottom:5px;
+    -moz-transition:background 1s;
+    -webkit-transition:background 1s;
+    -o-transition:background 1s;
+}
+#back-to-top a:hover span{
+    background:url(./../../images/top2.png) no-repeat center center;
+}
+@media screen and (min-width: 320px){
+    #back-to-top a span{
+    height:0.3rem;
+    width:0.3rem;
+    background-size: 0.3rem;
+}
+}
+@media screen and (min-width: 640px){
+    #back-to-top a span{
+      height:0.5rem;
+    width:0.5rem;
+    background-size: 0.5rem;
+}
+}
